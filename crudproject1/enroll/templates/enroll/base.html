@@ -1,0 +1,31 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>C R U D - Template</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}">
+</head>
+<body>
+ <div class="container mt-5">
+     <h2 class="text-center alert alert-danger">
+         Function Based View Modelform C R U D Project.
+     </h2>
+     {% block content %} {% endblock content %}
+ </div>
+ <script src="{% static 'enroll/js/jquery.js'%}"></script>
+ <script src="{% static 'enroll/js/popper.js'%}"></script>
+ <script src="{% static 'enroll/js/bootstrap.js'%}"></script>
+
+<script>
+    var message_ele = document.getElementById("msg");
+    setTimeout(function(){
+    message_ele.style.display = "none";
+     }, 5000);
+</script>
+
+</body>
+</html>
